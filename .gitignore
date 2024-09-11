@@ -1,0 +1,39 @@
+# Virtualenvs
+.venv
+django_venv/
+
+# Environment configurations
+.env
+.autoenv*
+
+.DS_Store
+.directory
+
+# Editors
+.vscode
+.vscode/*
+/.idea
+.idea/
+.mypy_cache
+
+# Statics
+/static
+/media
+*.bmp
+*.bak
+*.bak.gz
+*.bak.zip
+
+# Python bytecode
+*.pyc
+
+# Python cache
+__pycache__/
+
+# Django
+django.log
+migrations
+!migrations/__init__.py
+
+# SQLite3
+*.sqlite3
