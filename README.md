@@ -71,3 +71,25 @@ The first step is to get an application, such as Postman or another similar appl
             "message": "Successfully created user!"
         }
 
+### Generate User Token: In this section we need to put the user data entered in the previous step.
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/token/
+    Method: POST
+    Body:
+
+        {
+            "username": "user_01",
+            "password": "Mypassword_01"
+        }
+    
+    Response:
+
+        {
+
+            "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyNjI1MzI4MSwiaWF0IjoxNzI2MTY2ODgxLCJqdGkiOiJhOTMxOGY0ODI3MGU0ZDM1YmRiNzg3YTAxYTZjMGY2YSIsInVzZXJfaWQiOjR9.jS1LHtX_okJvUr7QA9HjOAI_HPL2kJOqQ027bdpV7fs",
+            "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI2MTY4NjgxLCJpYXQiOjE3MjYxNjY4ODEsImp0aSI6IjBhZDQ4ZTYxODY5NzRkMTE5OGI4YjU2NGMxYzllMjI5IiwidXNlcl9pZCI6NH0.wsomb5wHXKZM4liTmYpZgxlrZmud03BEcKFg5IlbY0c"
+
+        }
+
