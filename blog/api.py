@@ -63,3 +63,13 @@ class CommentViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
+
+    def perform_update(self, serializer):
+        if self.get_object().author != self.request.user:
+            raise PermissionDenied({"message": "You do not have permission to update this comment."})
+        serializer.save()
+
+    def perform_destroy(self, instance):
+        if instance.author != self.request.user:
+            raise PermissionDenied({"message": "You do not have permission to delete this comment."})
+        instance.delete()
