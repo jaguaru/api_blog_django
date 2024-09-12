@@ -31,3 +31,6 @@ class CommentViewSet(viewsets.ModelViewSet):
     serializer_class = CommentSerializer
     # Only authenticated users can create, update, and delete. Read-only access for others.
     permission_classes = [AllowAny]
+
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
