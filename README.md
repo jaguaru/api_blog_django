@@ -119,5 +119,44 @@ The first step is to get an application, such as Postman or another similar appl
             "comments": []
         }
 
+### Read the Posts: In this section you can see all the posts created by the user
 
-### Read the Posts: In this section we will put the token generated in the previous section in the access element
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/posts/
+    Method: GET
+    Authorization: Bearer <Token Access>
+    Body:
+    
+    Response:
+
+            [
+                {
+                    "id": 1,
+                    "title": "Creating My First Post",
+                    "content": "This is the content of my first post.",
+                    "author": "user_01",
+                    "created_at": "2024-09-12T18:57:07.230207Z",
+                    "updated_at": "2024-09-12T18:57:07.230284Z",
+                    "comments": []
+                },
+                {
+                    "id": 2,
+                    "title": "Creating My Second Post",
+                    "content": "This is the content of my second post.",
+                    "author": "user_01",
+                    "created_at": "2024-09-12T19:10:50.635587Z",
+                    "updated_at": "2024-09-12T19:10:50.635610Z",
+                    "comments": []
+                },
+                {
+                    "id": 3,
+                    "title": "Creating My Third Post",
+                    "content": "This is the content of my third post.",
+                    "author": "user_01",
+                    "created_at": "2024-09-12T19:11:02.249753Z",
+                    "updated_at": "2024-09-12T19:11:02.249794Z",
+                    "comments": []
+                }
+            ]
+
