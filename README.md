@@ -55,7 +55,7 @@ The first step is to get an application, such as Postman or another similar appl
 
     Request:
 
-    URL: http://127.0.0.1:8000/api/auth/token/register
+    URL: http://127.0.0.1:8000/api/register/
     Method: POST
     Body:
 
