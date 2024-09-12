@@ -2,7 +2,6 @@ from rest_framework import serializers
 from .models import Post, Comment
 
 
-
 # Serializer for Comment model
 class CommentSerializer(serializers.ModelSerializer):
     author = serializers.StringRelatedField()
