@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .api import PostViewSet, CommentViewSet
+from .api import PostViewSet, CommentViewSet, UserRegisterView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 
