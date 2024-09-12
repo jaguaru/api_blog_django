@@ -186,3 +186,14 @@ The first step is to get an application, such as Postman or another similar appl
             "comments": []
         }
 
+### Delete the Post: In this section you can see how to delete the post created by the user, in this case the id of the post is required
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/posts/1/
+    Method: DEL
+    Authorization: Bearer <Token Access>
+    Body:
+    
+    Response:
+
