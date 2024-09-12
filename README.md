@@ -160,3 +160,29 @@ The first step is to get an application, such as Postman or another similar appl
                 }
             ]
 
+### Update the Post: In this section you can see how to update the post created by the user, in this case the id of the post is required
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/posts/1/
+    Method: PUT
+    Authorization: Bearer <Token Access>
+    Body:
+
+        {
+            "title": "Modifying My First Post",
+            "content": "This is the modified content of my first post."
+        }
+    
+    Response:
+
+        {
+            "id": 1,
+            "title": "Modifying My First Post",
+            "content": "This is the modified content of my first post.",
+            "author": "user_01",
+            "created_at": "2024-09-12T18:57:07.230207Z",
+            "updated_at": "2024-09-12T19:21:58.234585Z",
+            "comments": []
+        }
+
