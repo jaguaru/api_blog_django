@@ -53,7 +53,6 @@ class PostViewSet(viewsets.ModelViewSet):
         if instance.author != self.request.user:
             raise PermissionDenied({"message": "You do not have permission to delete this post."})
         instance.delete()
-        return Response({"message": "The post has been successfully deleted."}, status=status.HTTP_200_OK)
 
 # ViewSet for Comment model
 class CommentViewSet(viewsets.ModelViewSet):
