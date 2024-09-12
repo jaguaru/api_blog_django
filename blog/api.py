@@ -1,7 +1,8 @@
 
+from rest_framework import permissions
 from rest_framework import status
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework.views import APIView
@@ -42,6 +43,16 @@ class PostViewSet(viewsets.ModelViewSet):
         comments = post.comments.all()
         serializer = CommentSerializer(comments, many=True)
         return Response(serializer.data)
+    
+    def perform_update(self, serializer):
+        if self.get_object().author != self.request.user:
+            raise PermissionDenied({"message": "You do not have permission to update this post."})
+        serializer.save()
+
+    def perform_destroy(self, instance):
+        if instance.author != self.request.user:
+            raise PermissionDenied({"message": "You do not have permission to delete this post."})
+        instance.delete()
 
 # ViewSet for Comment model
 class CommentViewSet(viewsets.ModelViewSet):
