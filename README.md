@@ -93,3 +93,31 @@ The first step is to get an application, such as Postman or another similar appl
 
         }
 
+### Create a Post: In this section we will put the token generated in the previous section in the access element
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/posts/
+    Method: POST
+    Authorization: Bearer <Token Access>
+    Body:
+
+        {
+            "title": "Creating My First Post",
+            "content": "This is the content of my first post."
+        }
+    
+    Response:
+
+        {
+            "id": 1,
+            "title": "Creating My First Post",
+            "content": "This is the content of my first post.",
+            "author": "user_01",
+            "created_at": "2024-09-12T18:57:07.230207Z",
+            "updated_at": "2024-09-12T18:57:07.230284Z",
+            "comments": []
+        }
+
+
+### Read the Posts: In this section we will put the token generated in the previous section in the access element
