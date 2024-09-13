@@ -37,8 +37,8 @@ Install the required packages:
 
 Create the necessary migrations
 
-    $ python manage.py makemigrations
-    $ python manage.py migrate
+    $ python3 manage.py makemigrations
+    $ python3 manage.py migrate
 
 Run the Django server:
 
