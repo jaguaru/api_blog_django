@@ -256,3 +256,29 @@ The first step is to get an application, such as Postman or another similar appl
             }
         ]
 
+### Update a Comment: In this section you can see how to update the comment created by the user, in this case the post id is needed
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/comments/
+    Method: PUT
+    Authorization: Bearer <Token Access>
+    Body:
+
+        {
+            "post": 1,
+            "content": "Updating a comment on the first post"
+        }
+
+    
+    Response:
+
+        {
+            "id": 1,
+            "author": "user_01",
+            "post": 1,
+            "content": "Updating a comment on the first post",
+            "created_at": "2024-09-13T03:41:14.478146Z",
+            "updated_at": "2024-09-13T03:49:40.739179Z"
+        }
+
