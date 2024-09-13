@@ -282,3 +282,21 @@ The first step is to get an application, such as Postman or another similar appl
             "updated_at": "2024-09-13T03:49:40.739179Z"
         }
 
+### Delete a Comment: In this section you can see how to delete a comment created by the user, in this case the post id is needed
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/comments/
+    Method: DEL
+    Authorization: Bearer <Token Access>
+    Body:
+
+        {
+            "post": 1,
+            "content": "Updating a comment on the first post"
+        }
+
+    
+    Response (HTTP STATUS 200 OK):
+        *(No message is generated when the comment is deleted.)
+
