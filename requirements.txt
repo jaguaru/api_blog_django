@@ -110,6 +110,7 @@ rabbitmq-server==0.0.1
 referencing==0.34.0
 reportlab==3.6.8
 requests==2.25.1
+rest-framework-simplejwt==0.0.2
 rpds-py==0.18.0
 scour==0.38.2
 SecretStorage==3.3.1
