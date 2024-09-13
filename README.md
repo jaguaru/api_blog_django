@@ -300,3 +300,38 @@ The first step is to get an application, such as Postman or another similar appl
     Response (HTTP STATUS 200 OK):
         *(No message is generated when the comment is deleted.)
 
+#
+# Status 401, 403, 404
+
+### If you obtain this status, it is because you are not the author of the post or comment.
+
+Status: 403 Forbidden
+
+    {
+    "detail": "You do not have permission to perform this action."
+    }
+
+### If you obtain this status, it is because the post or comment does not exist.
+
+Status: 404 Not Found
+
+    {
+    "detail": "No Comment matches the given query."
+    }
+
+### If you obtain this status, it is because the token has expired and a new one needs to be created to be able to access the posts and comments.
+
+Status: 401 Unauthorized
+
+    {
+    "detail": "Given token not valid for any token type",
+    "code": "token_not_valid",
+    "messages": [
+        {
+        "token_class": "AccessToken",
+        "token_type": "access",
+        "message": "Token is invalid or expired"
+        }
+    ]
+    }
+
