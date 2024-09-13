@@ -65,7 +65,7 @@ The first step is to get an application, such as Postman or another similar appl
             "password": "Mypassword_01"
         }
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
         {
             "message": "Successfully created user!"
@@ -84,7 +84,7 @@ The first step is to get an application, such as Postman or another similar appl
             "password": "Mypassword_01"
         }
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
         {
 
@@ -107,7 +107,7 @@ The first step is to get an application, such as Postman or another similar appl
             "content": "This is the content of my first post."
         }
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
         {
             "id": 1,
@@ -128,7 +128,7 @@ The first step is to get an application, such as Postman or another similar appl
     Authorization: Bearer <Token Access>
     Body:
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
             [
                 {
@@ -174,7 +174,7 @@ The first step is to get an application, such as Postman or another similar appl
             "content": "This is the modified content of my first post."
         }
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
         {
             "id": 1,
@@ -195,7 +195,7 @@ The first step is to get an application, such as Postman or another similar appl
     Authorization: Bearer <Token Access>
     Body:
     
-    Response:
+    Response (HTTP STATUS 200 OK):
         *(No response is generated when the post is deleted.)
 
 
@@ -214,7 +214,7 @@ The first step is to get an application, such as Postman or another similar appl
             "content": "Making a comment on the first post"
         }
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
         {
             "id": 1,
@@ -235,7 +235,7 @@ The first step is to get an application, such as Postman or another similar appl
     Body:
 
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
         [
             {
@@ -271,7 +271,7 @@ The first step is to get an application, such as Postman or another similar appl
         }
 
     
-    Response:
+    Response (HTTP STATUS 200 OK):
 
         {
             "id": 1,
