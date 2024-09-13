@@ -25,7 +25,7 @@ Create the directory and the virtual environment:
 
 Activate the virtual environment:
 
-    $ source .venv/bin/activate
+    $ source .env/bin/activate
 
 Virtual environment activated:
 
