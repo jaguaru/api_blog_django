@@ -225,4 +225,34 @@ The first step is to get an application, such as Postman or another similar appl
             "updated_at": "2024-09-13T02:59:48.022596Z"
         }
 
+### Read a Comment: In this section you can see how to read all the comments created by the user
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/comments/
+    Method: GET
+    Authorization: Bearer <Token Access>
+    Body:
+
+    
+    Response:
+
+        [
+            {
+                "id": 1,
+                "author": "user_01",
+                "post": 1,
+                "content": "Making a comment on the first post",
+                "created_at": "2024-09-13T02:59:48.022560Z",
+                "updated_at": "2024-09-13T02:59:48.022596Z"
+            },
+                        {
+                "id": 2,
+                "author": "user_01",
+                "post": 2,
+                "content": "Making a comment on the second post",
+                "created_at": "2024-09-13T03:08:52.037530Z",
+                "updated_at": "2024-09-13T03:08:52.037956Z"
+            }
+        ]
 
