@@ -199,7 +199,7 @@ The first step is to get an application, such as Postman or another similar appl
         *(No response is generated when the post is deleted.)
 
 
-### Create a Comment: In this section you can see how to create a comment, in this case the publication id is needed
+### Create a Comment: In this section you can see how to create a comment, in this case the post id is needed
 
 
     Request:
