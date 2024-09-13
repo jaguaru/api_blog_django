@@ -196,4 +196,7 @@ The first step is to get an application, such as Postman or another similar appl
     Body:
     
     Response:
+        *(No response is generated when the post is deleted.)
+
+
 
