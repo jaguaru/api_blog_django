@@ -199,4 +199,30 @@ The first step is to get an application, such as Postman or another similar appl
         *(No response is generated when the post is deleted.)
 
 
+### Create a Comment: In this section you can see how to create a comment, in this case the publication id is needed
+
+
+    Request:
+
+    URL: http://127.0.0.1:8000/api/blog/comments/
+    Method: POST
+    Authorization: Bearer <Token Access>
+    Body:
+
+        {
+            "post": 1,
+            "content": "Making a comment on the first post"
+        }
+    
+    Response:
+
+        {
+            "id": 1,
+            "author": "user_01",
+            "post": 1,
+            "content": "Making a comment on the first post",
+            "created_at": "2024-09-13T02:59:48.022560Z",
+            "updated_at": "2024-09-13T02:59:48.022596Z"
+        }
+
 
